@@ -2,3 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ToDoContainer CSS */
+.todo-container {
+  @apply flex flex-col items-center;
+  padding: 20px;
+  width: 80%;
+  min-height: 90vh;
+  border-radius: 8px;
+  border: 2px solid rgb(131, 204, 228);
+}
+
+.todo-img {
+  width: 300px;
+  height: 150px;
+}
+
+/* AddNewToDoForm CSS */
+.add-new-todo-form {
+  @apply flex flex-row items-center justify-between;
+  margin: 16px 0;
+  width: 50%;
+}
+
+.add-new-todo-input {
+  flex: 1;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 6px;
+  border: 2px solid #ddfafc;
+  outline: none;
+}
+
+.add-new-todo-btn {
+  background-color: aquamarine;
+  margin-left: 12px;
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  border: 2px solid #ddfafc;
+}
+
+/* UpdateToDoForm CSS */
+.update-todo-form {
+  width: 50%;
+}
+
+.update-todo-input {
+  flex: 1;
+  margin: 16px 0;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 6px;
+  border: 2px solid rgb(238, 155, 155);
+  outline: none;
+}
+
+.update-todo-btn-container {
+  margin-left: 12px;
+  width: 150px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.update-icon {
+  color: green;
+  font-size: 26px;
+}
+
+.cancel-icon {
+  color: red;
+  font-size: 30px;
+}
