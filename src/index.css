@@ -9,7 +9,7 @@
   width: 80%;
   min-height: 90vh;
   border-radius: 8px;
-  border: 2px solid rgb(131, 204, 228);
+  box-shadow: 5px 5px 15px #9feef9;
 }
 
 .todo-img {
@@ -35,11 +35,25 @@
 
 .add-new-todo-btn {
   background-color: aquamarine;
+  color: #254a3d;
+  font-family: 'Arial';
+  font-weight: 700;
   margin-left: 12px;
   width: 120px;
   height: 40px;
   border-radius: 6px;
-  border: 2px solid #ddfafc;
+  outline: none;
+}
+
+.todo-items-container {
+  width: 50%;
+}
+
+.no-todos {
+  color: #ee9b9b;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 /* UpdateToDoForm CSS */
@@ -76,4 +90,55 @@
 .cancel-icon {
   color: red;
   font-size: 30px;
+}
+
+/* ToDoItem CSS */
+.todo-item-container {
+  background-color: #ffe4c480;
+  margin-bottom: 6px;
+  padding: 0 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.todo-item-complete-tilte {
+  color: #f36c6c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-item-title {
+  color: #f36c6c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.todo-item-icons {
+  width: 35%;
+}
+
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.todo-item-not-complete-icon {
+  color: rgb(170, 237, 170);
+}
+
+.todo-item-complete-icon {
+  color: rgb(2, 182, 2);
+}
+
+.todo-item-edit-icon {
+  color: #1d93a3;
+}
+
+.todo-item-delete-icon {
+  color: #dd0909;
 }

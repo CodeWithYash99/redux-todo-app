@@ -1,6 +1,5 @@
 import React from "react";
 import AddNewToDoForm from "./AddNewToDoForm";
-import UpdateTodoForm from "./UpdateTodoForm";
 
 const ToDoContainer = () => {
   return (
@@ -10,10 +9,8 @@ const ToDoContainer = () => {
         alt="todo"
         className="todo-img"
       />
-      
 
       <AddNewToDoForm />
-      <UpdateTodoForm />
     </div>
   );
 };
