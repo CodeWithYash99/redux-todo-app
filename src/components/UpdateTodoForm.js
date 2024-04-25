@@ -11,12 +11,9 @@ const UpdateTodoForm = () => {
   const temp = useSelector((state) => state.tempTodos);
 
   const [editTodo, setEditTodo] = useState(temp[0].title);
-  console.log(temp[0].title);
 
   const onSubmitUpdateTodo = (e) => {
     e.preventDefault();
-
-    console.log("ok");
 
     if (editTodo) {
       dispatch(
@@ -32,15 +29,6 @@ const UpdateTodoForm = () => {
   const onChangeUpdateTodo = (e) => {
     setEditTodo(e.target.value);
   };
-
-  /*const onClickUpdateTodo = (e) => {
-    e.preventDefault();
-
-    if (editTodo) {
-      dispatch(updateTodo({id: temp[0].id, title: editTodo, completed: temp[0].completed}));
-    }
-
-  };*/
 
   const onClickCancelTodo = () => {
     dispatch(cancelTodo());
