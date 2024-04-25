@@ -1,9 +1,5 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
-/*let filteredTodoData = state.todos.filter((todo) => todo.id !== action.payload)
-      let filteredTodo = [...filteredTodoData, state.tempTodos]
-    state.todos.push(filteredTodo)*/
-
 const initialState = {
   todos: [
     { id: 1, title: "Learn HTML", completed: false },
@@ -53,7 +49,7 @@ const todoSlice = createSlice({
 
       let filteredTodo = [...filteredTodoData, action.payload];
       state.todos.push(...filteredTodo);
-      
+
       state.tempTodos.pop();
     },
     cancelTodo: (state) => {
