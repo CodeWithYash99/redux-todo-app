@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { addTodo } from "../redux/Features/todoSlice";
 
 import ToDoItem from "./ToDoItem";
-import UpdateTodoForm from "./UpdateTodoForm";
+import UpdateToDoForm from "./UpdateToDoForm";
 
 const AddNewToDoForm = () => {
   const [todo, setTodo] = useState("");
@@ -30,7 +30,7 @@ const AddNewToDoForm = () => {
   return (
     <>
       {tempTodos.length > 0 ? (
-        <UpdateTodoForm />
+        <UpdateToDoForm />
       ) : (
         <form onSubmit={addNewTodo} className="add-new-todo-form">
           <input
