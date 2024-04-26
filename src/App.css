@@ -5,7 +5,20 @@
 }
 
 .App {
-  padding: 20px;
   width: 100%;
   min-height: 100vh;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .App {
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .App {
+    padding: 20px;
+  }
 }
