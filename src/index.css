@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   /* ToDoContainer CSS */
   .todo-container {
     @apply flex flex-col items-center;
     padding: 20px;
     width: 90%;
-    min-height: 90vh;
+    min-height: 80vh;
     border-radius: 8px;
     box-shadow: 5px 5px 15px #9feef9;
   }
