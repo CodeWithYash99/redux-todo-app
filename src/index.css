@@ -8,7 +8,7 @@
     @apply flex flex-col items-center;
     padding: 20px;
     width: 90%;
-    min-height: 80vh;
+    min-height: 90vh;
     border-radius: 8px;
     box-shadow: 5px 5px 15px #9feef9;
   }
@@ -21,7 +21,7 @@
   /* AddNewToDoForm CSS */
   .add-new-todo-form {
     @apply flex flex-col items-center justify-between;
-    margin: 16px 0;
+    margin: 10px 0;
     width: 90%;
   }
 
@@ -60,13 +60,15 @@
 
   /* UpdateToDoForm CSS */
   .update-todo-form {
-    width: 50%;
+    @apply flex flex-col items-center justify-between;
+    margin: 10px 0;
+    width: 90%;
   }
 
   .update-todo-input {
-    flex: 1;
-    margin: 16px 0;
+    margin: 0 0 10px 0;
     padding-left: 10px;
+    width: 100%;
     height: 40px;
     border-radius: 6px;
     border: 2px solid #ee9b9b;
@@ -74,8 +76,7 @@
   }
 
   .update-todo-btn-container {
-    margin-left: 12px;
-    width: 150px;
+    width: 200px;
   }
 
   .btn {
@@ -96,32 +97,38 @@
 
   /* ToDoItem CSS */
   .todo-item-container {
+    @apply flex flex-col items-center justify-between;
     background-color: #ffe4c480;
     margin-bottom: 6px;
-    padding: 0 10px;
+    padding: 10px;
     width: 100%;
-    height: 40px;
+    min-height: 40px;
     border-radius: 6px;
   }
 
   .todo-item-complete-tilte {
+    align-self: flex-start;
     color: #f36c6c;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 10px;
     text-decoration: line-through;
     opacity: 0.4;
   }
 
   .todo-item-title {
+    align-self: flex-start;
     color: #f36c6c;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 10px;
   }
 
   .todo-item-icons {
-    width: 35%;
+    width: 70%;
+    height: 30px;
   }
 
   .icon {
